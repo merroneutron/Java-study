@@ -21,7 +21,7 @@ ClassPath是用来告诉java解释器（即java命令）在哪些目录下可以
 为eclipse安装插件以便于开发图形界面程序：  
 > help>Eclipse Marketplace>windowbuilder>install>confirm>accept>等待安装好
 
-安装好以后，在需要图形界面的java文件上右键选择windowbuilder就可以打开图形设计界面
+安装过程比较漫长，安装好以后，在需要图形界面的java文件上右键选择windowbuilder就可以打开图形设计界面
 
 
 
