@@ -13,3 +13,40 @@
 #### 变量的作用域
 * 成员变量：在类体中定义，作用域为整个类。
 * 局部变量：在方法体或者代码块中定义，作用域为方法体内或者代码块内。
+* java方法体中作用范围时禁止嵌套的，c++则可以。如以下代码是错误的：  
+
+``` java
+ public int fun(){
+ int a;
+ {
+    int a;//即使是其他数据类型也是错的
+ } 
+}
+```
+
+而c++则没问题
+``` c++
+ int fun(){
+ int a;
+ {
+    int a;
+ } 
+}
+```
+**但是**，java类与方法中变量作用域可以嵌套。注意是类与方法。如下：
+``` java
+public class StreamInTest {
+    String str;
+    public static void main(String[] args) {
+        String str;//正确
+    }
+}
+```
+``` java
+public class StreamInTest {
+    String str;
+    {
+       String str;//错误 
+    }
+}
+```
